@@ -22,7 +22,7 @@ h1, h2 {
 .top-hero-wrapper {
   width: 100vw;
   height: 100vh;
-  background-image: image-url('bg-top.png');
+  background-image: image-url('bg-top.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -64,6 +64,13 @@ h1, h2 {
     }
   }
 }
+
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
 .navbar-transparent {
   margin-bottom: 0px;
   background-color: rgba(0,0,0,0.5);
@@ -80,22 +87,6 @@ h1, h2 {
     height: 40px;
   }
 }
-.btn-black {
-  color: #565656;
-  border: 1px solid #565656;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 20px;
-  background-color: rgba(0,0,0,0.0);
-
-  &:hover {
-    color: #565656;
-  }
-}
-
-.topic-new-wrapper {
-  padding-top: 120px;
-}
 
 .btn-black {
   color: #565656;
@@ -113,6 +104,7 @@ h1, h2 {
 .topic-new-wrapper {
   padding-top: 120px;
 }
+
 .topic-index-wrapper {
   padding-top: 70px;
   background-color: #fafafa;
@@ -143,6 +135,14 @@ h1, h2 {
       width: 35px;
       height: 30px;
       margin-left: 20px;
+    }
+    
+    .topic-index-icon-red {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px;
+      -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
     }
   }
 }
